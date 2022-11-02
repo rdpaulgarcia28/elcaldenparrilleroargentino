@@ -1,0 +1,95 @@
+
+
+
+/*===================== VARIABLES ======================*/
+/*:root{
+  --color-primario:#0052d4;
+  --color-secuendario: #ffffff;
+  --color-degradado:linear-gradient(to left, #6FB1FC, #4364F7, #0052D4);
+  --font-family: 'NotoSerif-BoldItalic';
+}*/
+
+/*========================= TIPOGRAFIAS==================*/
+/*@font-face{
+  font-family: 'NotoSerif-Italic';
+  src: url(../font/NotoSerif-Italic.ttf);
+  font-family: 'NotoSerif-Bold';
+  src: url(../font/NotoSerif-Bold.ttf);
+  font-family: 'NotoSerif-BoldItalic';
+  src: url(../font/NotoSerif-BoldItalic.ttf);
+  font-family: 'NotoSerif-Regular';
+  src: url(../font/NotoSerif-Regular.ttf);  
+}*/
+
+
+html{
+  box-sizing: border-box; 
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+*,*::before,::after{
+  box-sizing: inherit;
+}
+@media(min-width:1440px){
+  body{
+    width: 1440px;
+  }
+}
+body{  
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(232, 232, 232);
+}
+body::-webkit-scrollbar{
+  width: 4px;
+  background-color:rgba(0, 0, 0, 0.953);
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 9);
+  border-radius: 3px;
+}
+section{
+  margin: 0;
+}
+a{
+  font-family: 'Courgette', cursive;
+  font-size: 16px;
+}
+
+p{
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Benne', serif;
+  line-height: 15px;
+  color: black;
+}
+
+main {
+  display: block;
+}
+
+h1{
+  font-size: 2.2rem;
+  margin: 0;
+  font-family: 'Courgette', cursive;
+}
+h2, h3, h4, h5{
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Courgette', cursive;
+}
+ul li{
+  font-family: 'Viaoda Libre', cursive;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,85 @@
+.promo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/contacto-carne.jpg);
+    background-size: auto;
+    background-position: center;
+    position: relative;
+}
+.promo::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.686);
+    position: absolute;
+}
+.promo h2{
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+.contenedor-video-texto{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+}
+.evento-video{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.video{
+    width: 100%;
+}
+.evento-texto{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.evento-texto h3{
+    color: white;
+    margin: 8px;
+}
+.evento-texto p{
+    color: white;
+    width: 90%;
+    text-align: justify;
+}
+.evento-texto span{
+    color: yellow;
+    margin: 10px;
+    text-align: center;
+}
+
+@media(max-width:1000px){
+
+    .contenedor-video-texto{
+        flex-direction: column;
+    }
+    .evento-video{
+        width: 90%;
+    }
+    .evento-texto{
+        width: 90%;
+    }
+}
+@media(max-height:700px){
+    .promo{
+        height: 670px;
+        justify-content: space-around;
+    }
+    
+}
+

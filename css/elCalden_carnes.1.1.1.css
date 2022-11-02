@@ -1,0 +1,111 @@
+
+.carnes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.contenedor-superior{
+    width: 100%;
+    margin: 50px auto;
+}
+.contenedor-superior h2{
+    margin-bottom: 10px;
+}
+.contenedor-superior p{
+    width: 80%;
+    margin: 0px auto;
+}
+.contenedor-inferior{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.118);
+}
+.contenedor-inferior-inverso{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 ;
+    flex-wrap: wrap-reverse;
+}
+.contenedor-inferior-izquierdo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contenedor-inferior-izquierdo p{
+    width: 85%;
+    margin: 10px auto;
+    text-align: center;
+}
+.contenedor-tipos-corte{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.contenedor-tipos-corte-izquierdo{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-tipos-corte-izquierdo a{
+    padding: 5px;
+}
+.contenedor-tipos-corte-derecho{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-tipos-corte-derecho a{
+    padding: 5px;
+}
+
+.contenedor-inferior-derecho{
+    width: 45%;
+    position: relative;
+    display: flex;
+}
+.scroll{
+    background-color: black;
+}
+.borde-sombreado{
+    border-radius: 5px;
+    border: black solid 2px;
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:550px){
+    .contenedor-inferior{
+        flex-wrap: wrap;
+    }
+    .contenedor-inferior-izquierdo{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .contenedor-inferior-derecho{
+        width: 450px;
+        margin: 10px auto;
+    }
+}
+@media(max-width:460px){
+    .contenedor-superior p{
+        width: 80%;
+    }
+    .contenedor-inferior-izquierdo{
+        width: 350px;
+    }
+    .contenedor-inferior-derecho{
+        width: 350px;
+    }
+}

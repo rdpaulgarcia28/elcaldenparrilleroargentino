@@ -1,0 +1,91 @@
+.contactanos{
+    background-image: url(../img/contacto-carne.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contactanos h2{
+    color: white;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.contactanos::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.467);
+}
+.contenedor-informacion-mapa{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.contenedor-informacion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contenedor-informacion::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.522);
+    width: 100%;
+    height: 100%;
+}
+.contenedor-informacion-span-1{
+    color: yellow;
+    margin: 10px;
+    z-index: 1;
+}
+.contenedor-informacion span a{
+    color: white;
+    text-decoration: none;
+}
+.contenedor-informacion-span-2{
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+.mapa{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+.google-map{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:1000px){
+
+    .contenedor-informacion-mapa{
+        flex-direction: column;
+    }
+    .contenedor-informacion{
+        width: 80%;
+    }
+    .mapa{
+        width: 80%;
+    }
+}
+@media(max-width:425px){
+    .contactanos{
+        height: 600px;
+    }
+}
